@@ -1,7 +1,34 @@
 GHODictionary
 ===========
 
-Ordered dictionary.
+Ordered dictionary. Enumeration occurs in the order that entries were added. If an item is overwritten, the order is unchanged.
+
+For example,
+
+```objc
+GHODictionary *dict = [GHODictionary dictionary];
+dict[@"key1"] = @(1);
+dict[@"key2"] = @(2);
+dict[@"key1"] = @(3);
+
+for (id key in dict) ... // @"key1", @"key2" 
+
+[dict allKeys]; // The same as enumeration, @"key1", @"key2"
+
+[dict map:^(id key, id value) { ... }]; // (@"key1", @(1)), (@"key2", @(2))
+```
+
+Because it is ordered, it is also sortable:
+
+```objc
+dict[@"b"] = @(2);
+dict[@"c"] = @(3);
+dict[@"a"] = @(1);
+[dict sortKeysUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+
+[dict allKeys]; // @"a", @"b", @"c"
+```
+
 
 # Podfile
 
@@ -14,7 +41,7 @@ pod "GHODictionary"
 ```objc
 #import <GHODictionary/GHODictionary.h>
 
-GHODictionary *dict = [[GHODictionary alloc] init];
+GHODictionary *dict = [GHODictionary dictionary];
 [dict addEntriesFromDictionary:@{@"c": @(1), @"b": @(2), @"a": @(3)}];
 
 [dict sortKeysUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
