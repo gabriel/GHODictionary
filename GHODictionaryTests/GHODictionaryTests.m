@@ -47,6 +47,14 @@
 
   NSArray *expectedKeys = @[@"dup", @"ok"];
   XCTAssertEqualObjects([dict allKeys], expectedKeys);
+
+  dict[@"dup"] = nil;
+  [dict removeObjectForKey:@"dup"]; // Make sure this no-ops
+
+  [dict addEntriesFromDictionary:@{@"dup": @(3)}];
+
+  NSArray *expectedKeys2 = @[@"ok", @"dup"];
+  XCTAssertEqualObjects([dict allKeys], expectedKeys2);
 }
 
 - (void)testMap {
