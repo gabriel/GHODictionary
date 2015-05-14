@@ -6,6 +6,8 @@ Ordered dictionary. Enumeration occurs in the order that entries were added. If 
 For example,
 
 ```objc
+#import <GHODictionary/GHODictionary.h>
+
 GHODictionary *dict = [GHODictionary dictionary];
 dict[@"key1"] = @(1);
 dict[@"key2"] = @(2);
@@ -34,17 +36,5 @@ dict[@"a"] = @(1);
 
 ```ruby
 pod "GHODictionary"
-```
-
-# Usage
-
-```objc
-#import <GHODictionary/GHODictionary.h>
-
-GHODictionary *dict = [GHODictionary dictionary];
-[dict addEntriesFromDictionary:@{@"c": @(1), @"b": @(2), @"a": @(3)}];
-
-[dict sortKeysUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-
 ```
 
