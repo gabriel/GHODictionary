@@ -15,7 +15,7 @@ for (id key in dict) ... // @"key1", @"key2"
 
 [dict allKeys]; // The same as enumeration, @"key1", @"key2"
 
-[dict map:^(id key, id value) { ... }]; // (@"key1", @(1)), (@"key2", @(2))
+[dict map:^(id key, id value) { ... }]; // (@"key1", @(3)), (@"key2", @(2))
 ```
 
 Because it is ordered, it is also sortable:
