@@ -17,7 +17,7 @@
 @implementation GHOrderedDictionaryTests
 
 - (void)testDict {
-  GHODictionary *dict = [[GHODictionary alloc] init];
+  GHODictionary *dict = [GHODictionary dictionary];
   NSMutableArray *keys = [NSMutableArray array];
   for (NSInteger i = 0; i < 1024; i++) {
     [keys addObject:@(i)];
@@ -34,7 +34,31 @@
   GHODictionary *dictCopy = [dict copy];
   dictCopy[@(1)] = @"test";
 
-  //NSLog(@"Description: %@", [dictCopy description]);
+  NSLog(@"dictCopy=%@", dictCopy);
+}
+
+- (void)testAddEntries {
+  GHODictionary *dict = [GHODictionary dictionary];
+  [dict addEntriesFromDictionary:@{@"dup": @(1)}];
+  [dict addEntriesFromDictionary:@{@"ok": @(0)}];
+  [dict addEntriesFromDictionary:@{@"dup": @(2)}];
+  XCTAssertEqual([[dict allKeys] count], 2);
+  XCTAssertEqualObjects(dict[@"dup"], @(2));
+
+  NSArray *expectedKeys = @[@"dup", @"ok"];
+  XCTAssertEqualObjects([dict allKeys], expectedKeys);
+}
+
+- (void)testMap {
+  GHODictionary *dict = [GHODictionary dictionary];
+  dict[@"a"] = @(1);
+  dict[@"b"] = @(2);
+  dict[@"c"] = @(3);
+
+  NSArray *fromMap = [dict map:^id(id key, id value) { return @[key, value]; }];
+  NSArray *expected = @[@[@"a", @(1)],@[@"b", @(2)],@[@"c", @(3)]];
+
+  XCTAssertEqualObjects(fromMap, expected);
 }
 
 - (void)testSort {

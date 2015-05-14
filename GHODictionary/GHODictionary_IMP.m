@@ -136,7 +136,11 @@
 }
 
 - (void)addEntriesFromDictionary:(NSDictionary *)dictionary {
-  [_array addObjectsFromArray:[dictionary allKeys]];
+  for (id key in dictionary) {
+    if (![_dictionary objectForKey:key]) {
+      [_array addObject:key];
+    }
+  }
   [_dictionary addEntriesFromDictionary:dictionary];
 }
 
@@ -169,6 +173,27 @@
 
 - (NSUInteger)hash {
   return [_dictionary hash];
+}
+
+- (NSArray *)map:(id (^)(id key, id value))block {
+  NSMutableArray *array = [NSMutableArray array];
+
+  [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+    id object = block(key, obj);
+    if (object) {
+      [array addObject:object];
+    }
+  }];
+
+  return array;
+}
+
+- (void)enumerateKeysAndObjectsUsingBlock:(void (^)(id key, id obj, BOOL *stop))block {
+  for (id key in _array) {
+    BOOL stop = NO;
+    block(key, _dictionary[key], &stop);
+    if (stop) break;
+  }
 }
 
 @end

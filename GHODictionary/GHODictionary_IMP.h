@@ -37,6 +37,13 @@
 
 - (NSDictionary *)toDictionary;
 
+- (NSArray *)map:(id (^)(id key, id value))block;
+- (void)enumerateKeysAndObjectsUsingBlock:(void (^)(id key, id obj, BOOL *stop))block;
+
+/*!
+ Add object to key entry.
+ This is to make it easier to create a dictionary of key to array values.
+ */
 - (void)addObject:(id)object forKey:(id)key;
 
 @end
