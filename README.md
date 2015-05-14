@@ -20,6 +20,14 @@ for (id key in dict) ... // @"key1", @"key2"
 [dict map:^(id key, id value) { ... }]; // (@"key1", @(3)), (@"key2", @(2))
 ```
 
+If you want to overwrite a value and have it moved to the end of the ordering, then remove it and re-add:
+
+```objc
+dict[@"key1"] = nil;
+dict[@"key1"] = @(3);
+[dict allKeys]; // @"key2", @"key1"
+```
+
 Because it is ordered, it is also sortable:
 
 ```objc
