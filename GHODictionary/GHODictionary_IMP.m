@@ -135,6 +135,15 @@
   return _array;
 }
 
+- (void)addEntriesFromOrderedDictionary:(GHODictionary *)dictionary {
+  for (id key in dictionary) {
+    if (![_dictionary objectForKey:key]) {
+      [_array addObject:key];
+    }
+  }
+  [_dictionary addEntriesFromDictionary:[dictionary toDictionary]];
+}
+
 - (void)addEntriesFromDictionary:(NSDictionary *)dictionary {
   for (id key in dictionary) {
     if (![_dictionary objectForKey:key]) {

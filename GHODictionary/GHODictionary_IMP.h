@@ -30,6 +30,7 @@
 - (void)sortKeysUsingSelector:(SEL)selector deepSort:(BOOL)deepSort;
 - (NSArray *)allKeys;
 
+- (void)addEntriesFromOrderedDictionary:(GHODictionary *)dictionary;
 - (void)addEntriesFromDictionary:(NSDictionary *)dictionary;
 
 - (NSEnumerator *)keyEnumerator;
