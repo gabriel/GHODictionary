@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GHODictionary"
-  s.version      = "1.0.2"
+  s.version      = "1.0.5"
   s.summary      = "Ordered dictionary."
   s.homepage     = "https://github.com/gabriel/GHODictionary"
   s.license      = { :type => "MIT" }

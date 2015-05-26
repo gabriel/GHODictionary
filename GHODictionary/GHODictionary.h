@@ -23,4 +23,4 @@ FOUNDATION_EXPORT const unsigned char GHODictionaryVersionString[];
 
 #import <Foundation/Foundation.h>
 
-#end
+#endif
