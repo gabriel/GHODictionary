@@ -10,7 +10,7 @@
 		001391E71B04112B0082DEA8 /* GHODictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391E61B04112B0082DEA8 /* GHODictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		001391ED1B04112B0082DEA8 /* GHODictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001391E11B04112B0082DEA8 /* GHODictionary.framework */; };
 		001391F41B04112B0082DEA8 /* GHODictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 001391F31B04112B0082DEA8 /* GHODictionaryTests.m */; };
-		001391FF1B0411570082DEA8 /* GHODictionary_IMP.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391FD1B0411560082DEA8 /* GHODictionary_IMP.h */; };
+		001391FF1B0411570082DEA8 /* GHODictionary_IMP.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391FD1B0411560082DEA8 /* GHODictionary_IMP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		001392001B0411570082DEA8 /* GHODictionary_IMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 001391FE1B0411560082DEA8 /* GHODictionary_IMP.m */; };
 /* End PBXBuildFile section */
 
@@ -411,6 +411,7 @@
 				001391F91B04112B0082DEA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		001391FA1B04112B0082DEA8 /* Build configuration list for PBXNativeTarget "GHODictionaryTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				001391FC1B04112B0082DEA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
