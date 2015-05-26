@@ -37,6 +37,12 @@
   NSLog(@"dictCopy=%@", dictCopy);
 }
 
+- (void)testDescription {
+  GHODictionary *dict = [GHODictionary dictionaryWithDictionary:@{@"a": @(1)}];
+  [dict debugDescription];
+  [dict description];
+}
+
 - (void)testAddEntries {
   GHODictionary *dict = [GHODictionary dictionary];
   [dict addEntriesFromDictionary:@{@"dup": @(1)}];
