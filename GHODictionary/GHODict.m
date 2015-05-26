@@ -1,12 +1,12 @@
 //
-//  GHODictionary_IMP.m
+//  GHODict.m
 //  GHODictionary
 //
 //  Created by Gabriel on 5/13/15.
 //  Copyright (c) 2015 Gabriel Handford. All rights reserved.
 //
 
-#import "GHODictionary_IMP.h"
+#import "GHODict.h"
 
 @interface GHODictionary ()
 @property NSMutableArray *array;

@@ -1,5 +1,5 @@
 //
-//  GHODictionary_IMP.h
+//  GHODict.h
 //  GHODictionary
 //
 //  Created by Gabriel on 5/13/15.

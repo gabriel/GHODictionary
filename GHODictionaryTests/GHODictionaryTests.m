@@ -9,12 +9,12 @@
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
 
-#import "GHODictionary_IMP.h"
+@import GHODictionary;
 
-@interface GHOrderedDictionaryTests : XCTestCase
+@interface GHODictionaryTests : XCTestCase
 @end
 
-@implementation GHOrderedDictionaryTests
+@implementation GHODictionaryTests
 
 - (void)testDict {
   GHODictionary *dict = [GHODictionary dictionary];

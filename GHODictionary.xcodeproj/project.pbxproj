@@ -10,8 +10,8 @@
 		001391E71B04112B0082DEA8 /* GHODictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391E61B04112B0082DEA8 /* GHODictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		001391ED1B04112B0082DEA8 /* GHODictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001391E11B04112B0082DEA8 /* GHODictionary.framework */; };
 		001391F41B04112B0082DEA8 /* GHODictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 001391F31B04112B0082DEA8 /* GHODictionaryTests.m */; };
-		001391FF1B0411570082DEA8 /* GHODictionary_IMP.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391FD1B0411560082DEA8 /* GHODictionary_IMP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		001392001B0411570082DEA8 /* GHODictionary_IMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 001391FE1B0411560082DEA8 /* GHODictionary_IMP.m */; };
+		001391FF1B0411570082DEA8 /* GHODict.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391FD1B0411560082DEA8 /* GHODict.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		001392001B0411570082DEA8 /* GHODict.m in Sources */ = {isa = PBXBuildFile; fileRef = 001391FE1B0411560082DEA8 /* GHODict.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +31,8 @@
 		001391EC1B04112B0082DEA8 /* GHODictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHODictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		001391F21B04112B0082DEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001391F31B04112B0082DEA8 /* GHODictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHODictionaryTests.m; sourceTree = "<group>"; };
-		001391FD1B0411560082DEA8 /* GHODictionary_IMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHODictionary_IMP.h; sourceTree = "<group>"; };
-		001391FE1B0411560082DEA8 /* GHODictionary_IMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHODictionary_IMP.m; sourceTree = "<group>"; };
+		001391FD1B0411560082DEA8 /* GHODict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHODict.h; sourceTree = "<group>"; };
+		001391FE1B0411560082DEA8 /* GHODict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHODict.m; sourceTree = "<group>"; };
 		001392011B0411D30082DEA8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		001392021B0412160082DEA8 /* GHODictionary.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GHODictionary.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,8 +81,8 @@
 			children = (
 				001391E61B04112B0082DEA8 /* GHODictionary.h */,
 				001391E41B04112B0082DEA8 /* Supporting Files */,
-				001391FD1B0411560082DEA8 /* GHODictionary_IMP.h */,
-				001391FE1B0411560082DEA8 /* GHODictionary_IMP.m */,
+				001391FD1B0411560082DEA8 /* GHODict.h */,
+				001391FE1B0411560082DEA8 /* GHODict.m */,
 			);
 			path = GHODictionary;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001391FF1B0411570082DEA8 /* GHODictionary_IMP.h in Headers */,
+				001391FF1B0411570082DEA8 /* GHODict.h in Headers */,
 				001391E71B04112B0082DEA8 /* GHODictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001392001B0411570082DEA8 /* GHODictionary_IMP.m in Sources */,
+				001392001B0411570082DEA8 /* GHODict.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
