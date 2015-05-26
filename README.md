@@ -42,7 +42,12 @@ dict[@"a"] = @(1);
 
 # Podfile
 
-```ruby
+```
 pod "GHODictionary"
 ```
 
+# Cartfile
+
+```
+github "gabriel/GHODictionary"
+```
