@@ -28,7 +28,7 @@
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
-  if ((self = [self initWithCapacity:10])) {
+  if ((self = [self initWithCapacity:[dictionary count]])) {
     [self addEntriesFromDictionary:dictionary];
   }
   return self;
