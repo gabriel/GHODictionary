@@ -39,6 +39,7 @@
 
 - (void)testDescription {
   GHODictionary *dict = [GHODictionary dictionaryWithDictionary:@{@"a": @(1)}];
+  XCTAssertEqual([dict count], 1);
   [dict debugDescription];
   [dict description];
 }

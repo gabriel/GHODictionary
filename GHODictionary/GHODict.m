@@ -42,6 +42,10 @@
   return [[self alloc] initWithDictionary:dictionary];
 }
 
++ (instancetype)dictionaryWithCapacity:(NSUInteger)capacity {
+  return [[self alloc] initWithCapacity:capacity];
+}
+
 + (instancetype)d:(NSDictionary *)dictionary {
   return [[self alloc] initWithDictionary:dictionary];
 }
@@ -112,6 +116,10 @@
 
 - (id)objectForKeyedSubscript:(id)key {
   return [self objectForKey:key];
+}
+
+- (NSInteger)count {
+  return [_array count];
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(id __unsafe_unretained [])buffer count:(NSUInteger)len {

@@ -10,12 +10,11 @@
 
 @interface GHODictionary : NSObject <NSFastEnumeration>
 
-@property (readonly) NSUInteger count;
-
 - (instancetype)initWithCapacity:(NSUInteger)capacity;
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 + (instancetype)dictionary;
 + (instancetype)dictionaryWithDictionary:(NSDictionary *)dictionary;
++ (instancetype)dictionaryWithCapacity:(NSUInteger)capacity;
 // Shorthand when using literal
 + (instancetype)d:(NSDictionary *)dictionary;
 
@@ -23,6 +22,8 @@
 - (id)objectForKey:(id)key;
 
 - (void)removeObjectForKey:(id)key;
+
+- (NSInteger)count;
 
 - (void)setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key;
 - (id)objectForKeyedSubscript:(id)key;
