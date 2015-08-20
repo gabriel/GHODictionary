@@ -31,8 +31,12 @@
 - (void)sortKeysUsingSelector:(SEL)selector deepSort:(BOOL)deepSort;
 - (NSArray *)allKeys;
 
-- (void)addEntriesFromOrderedDictionary:(GHODictionary *)dictionary;
-- (void)addEntriesFromDictionary:(NSDictionary *)dictionary;
+/*!
+ Add dictionary entries.
+
+ @param dictionary Dictionary, can be NSDictionary or GHODictionary
+ */
+- (void)addEntriesFromDictionary:(id)dictionary;
 
 - (NSEnumerator *)keyEnumerator;
 - (NSEnumerator *)reverseKeyEnumerator;
@@ -47,6 +51,9 @@
  This is to make it easier to create a dictionary of key to array values.
  */
 - (void)addObject:(id)object forKey:(id)key;
+
+// Deprecated; Use addEntriesFromDictionary
+- (void)addEntriesFromOrderedDictionary:(GHODictionary *)dictionary;
 
 @end
 

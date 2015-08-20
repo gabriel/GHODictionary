@@ -144,21 +144,17 @@
 }
 
 - (void)addEntriesFromOrderedDictionary:(GHODictionary *)dictionary {
-  for (id key in dictionary) {
-    if (![_dictionary objectForKey:key]) {
-      [_array addObject:key];
-    }
-  }
-  [_dictionary addEntriesFromDictionary:[dictionary toDictionary]];
+  [self addEntriesFromDictionary:dictionary];
 }
 
-- (void)addEntriesFromDictionary:(NSDictionary *)dictionary {
+- (void)addEntriesFromDictionary:(id)dictionary {
   for (id key in dictionary) {
     if (![_dictionary objectForKey:key]) {
       [_array addObject:key];
     }
   }
-  [_dictionary addEntriesFromDictionary:dictionary];
+  NSDictionary *dict = [dictionary isKindOfClass:GHODictionary.class] ? [dictionary toDictionary] : dictionary;
+  [_dictionary addEntriesFromDictionary:dict];
 }
 
 - (void)addObject:(id)object forKey:(id)key {
