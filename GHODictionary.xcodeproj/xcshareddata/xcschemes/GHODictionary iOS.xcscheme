@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "33220B711CFF9F1700F3C3DA"
-               BuildableName = "GHODictionary iOS.framework"
+               BuildableName = "GHODictionary.framework"
                BlueprintName = "GHODictionary iOS"
                ReferencedContainer = "container:GHODictionary.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33220B711CFF9F1700F3C3DA"
-            BuildableName = "GHODictionary iOS.framework"
+            BuildableName = "GHODictionary.framework"
             BlueprintName = "GHODictionary iOS"
             ReferencedContainer = "container:GHODictionary.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33220B711CFF9F1700F3C3DA"
-            BuildableName = "GHODictionary iOS.framework"
+            BuildableName = "GHODictionary.framework"
             BlueprintName = "GHODictionary iOS"
             ReferencedContainer = "container:GHODictionary.xcodeproj">
          </BuildableReference>
