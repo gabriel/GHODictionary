@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001391E71B04112B0082DEA8 /* GHODictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391E61B04112B0082DEA8 /* GHODictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		001391ED1B04112B0082DEA8 /* GHODictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001391E11B04112B0082DEA8 /* GHODictionary.framework */; };
 		001391F41B04112B0082DEA8 /* GHODictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 001391F31B04112B0082DEA8 /* GHODictionaryTests.m */; };
-		001391FF1B0411570082DEA8 /* GHODict.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391FD1B0411560082DEA8 /* GHODict.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		001392001B0411570082DEA8 /* GHODict.m in Sources */ = {isa = PBXBuildFile; fileRef = 001391FE1B0411560082DEA8 /* GHODict.m */; };
-		33220B7A1CFF9F4600F3C3DA /* GHODictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391E61B04112B0082DEA8 /* GHODictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33220B7B1CFF9F4600F3C3DA /* GHODict.h in Headers */ = {isa = PBXBuildFile; fileRef = 001391FD1B0411560082DEA8 /* GHODict.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33220B7C1CFF9F4600F3C3DA /* GHODict.m in Sources */ = {isa = PBXBuildFile; fileRef = 001391FE1B0411560082DEA8 /* GHODict.m */; };
+		D939A20826949F9100581864 /* GHODictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D939A20626949F9100581864 /* GHODictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D939A20926949FD900581864 /* GHODict.h in Headers */ = {isa = PBXBuildFile; fileRef = D939A20526949F9100581864 /* GHODict.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +28,16 @@
 /* Begin PBXFileReference section */
 		001391E11B04112B0082DEA8 /* GHODictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GHODictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		001391E51B04112B0082DEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		001391E61B04112B0082DEA8 /* GHODictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHODictionary.h; sourceTree = "<group>"; };
 		001391EC1B04112B0082DEA8 /* GHODictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHODictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		001391F21B04112B0082DEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001391F31B04112B0082DEA8 /* GHODictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHODictionaryTests.m; sourceTree = "<group>"; };
-		001391FD1B0411560082DEA8 /* GHODict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHODict.h; sourceTree = "<group>"; };
 		001391FE1B0411560082DEA8 /* GHODict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHODict.m; sourceTree = "<group>"; };
 		001392011B0411D30082DEA8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		001392021B0412160082DEA8 /* GHODictionary.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GHODictionary.podspec; sourceTree = "<group>"; };
 		33220B721CFF9F1700F3C3DA /* GHODictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GHODictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33220B761CFF9F1700F3C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D939A20526949F9100581864 /* GHODict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHODict.h; sourceTree = "<group>"; };
+		D939A20626949F9100581864 /* GHODictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHODictionary.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +91,8 @@
 		001391E31B04112B0082DEA8 /* GHODictionary */ = {
 			isa = PBXGroup;
 			children = (
-				001391E61B04112B0082DEA8 /* GHODictionary.h */,
+				D939A20426949F9100581864 /* include */,
 				001391E41B04112B0082DEA8 /* Supporting Files */,
-				001391FD1B0411560082DEA8 /* GHODict.h */,
 				001391FE1B0411560082DEA8 /* GHODict.m */,
 			);
 			path = GHODictionary;
@@ -134,6 +131,15 @@
 			path = "GHODictionary iOS";
 			sourceTree = "<group>";
 		};
+		D939A20426949F9100581864 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D939A20526949F9100581864 /* GHODict.h */,
+				D939A20626949F9100581864 /* GHODictionary.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -141,8 +147,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001391FF1B0411570082DEA8 /* GHODict.h in Headers */,
-				001391E71B04112B0082DEA8 /* GHODictionary.h in Headers */,
+				D939A20826949F9100581864 /* GHODictionary.h in Headers */,
+				D939A20926949FD900581864 /* GHODict.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +156,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33220B7A1CFF9F4600F3C3DA /* GHODictionary.h in Headers */,
-				33220B7B1CFF9F4600F3C3DA /* GHODict.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +242,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 001391D71B04112B0082DEA8;
@@ -542,6 +547,7 @@
 				33220B781CFF9F1700F3C3DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

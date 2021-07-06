@@ -13,7 +13,7 @@ dict[@"key1"] = @(1);
 dict[@"key2"] = @(2);
 dict[@"key1"] = @(3);
 
-for (id key in dict) ... // @"key1", @"key2" 
+for (id key in dict) ... // @"key1", @"key2"
 
 [dict allKeys]; // The same as enumeration, @"key1", @"key2"
 
@@ -39,6 +39,11 @@ dict[@"a"] = @(1);
 [dict allKeys]; // @"a", @"b", @"c"
 ```
 
+# Swift Package Manager
+
+```swift
+.package(url: "https://github.com/gabriel/GHODictionary", from: "1.2.0"),
+```
 
 # Podfile
 

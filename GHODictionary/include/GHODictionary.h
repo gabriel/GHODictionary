@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char GHODictionaryVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <GHODictionary/PublicHeader.h>
 
-#import <GHODictionary/GHODict.h>
+#import "GHODict.h"

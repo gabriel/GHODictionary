@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Gabriel Handford. All rights reserved.
 //
 
-#import "GHODict.h"
+#import "include/GHODict.h"
 
 @interface GHODictionary ()
 @property NSMutableArray *array;
